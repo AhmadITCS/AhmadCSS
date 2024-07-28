@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام الري الذكي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Hope.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo"  src="data:image/png;base64,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" " alt="شعار الموقع">
+            <h1 style="   color: white;">نظام الري الذكي</h1>
+            <ul>
+                <li><a href="#contact-section">تواصل معنا</a></li>
+                <li><a href="#features-section">المميزات</a></li>
+                <li><a href="#settings-section">الإعدادات</a></li>
+                <li><a href="#log-section">السجل</a></li>
+                
+                <li><a href="#main-section">الرئيسية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main-section" class="main-section">
+        <div class="container">
+            <h1>مرحباً بك في نظام الري الذكي</h1>
+            <p style="color: #43a047;">نحن نقدم نظاماً ذكياً يساعدك على الري الأمثل لنباتاتك. يمكنك مراقبة نسبة الرطوبة والتحكم في نظام الري بسهولة.</p>
+            <div class="status">النظام قيد التشغيل</div>
+            <div class="moisture-container">
+                <div class="moisture-level">مستوى الرطوبة الحالي: <span id="moisture-level">0%</span></div>
+                <div class="moisture-bar">
+                    <div class="moisture-indicator" id="moisture-indicator"></div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button onclick="startIrrigation()">بدء الري</button>
+                <button onclick="stopIrrigation()">إيقاف الري</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="features-section" class="features-section">
+        <h2>مميزات نظامنا</h2>
+        <div class="feature">
+            <h3>مراقبة الرطوبة</h3>
+            <p>يمكنك مراقبة نسبة الرطوبة في التربة والحصول على تنبيهات عندما تكون بحاجة للري.</p>
+        </div>
+        <div class="feature">
+            <h3>جدولة الري</h3>
+            <p>يمكنك تحديد جداول زمنية للري التلقائي حسب احتياجات نباتاتك.</p>
+        </div>
+        <div class="feature">
+            <h3>توفير المياه</h3>
+            <p>يساعد النظام في توفير المياه عبر الري الأمثل وتجنب الهدر.</p>
+        </div>
+    </section>
+
+    <section id="contact-section" class="contact-section">
+        <h2>تواصل معنا</h2>
+        <form action="https://example.com/submit_form" method="POST">
+            <div class="form-group">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+            </div>
+            <div class="form-group">
+                <label for="message">رسالتك</label>
+                <textarea id="message" name="message" placeholder="أدخل رسالتك" rows="5" required></textarea>
+            </div>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+    
+    
+
+    <section id="settings-section" class="settings-section">
+        <h2>الإعدادات</h2>
+        <form>
+            <div class="form-group">
+                <label for="interval">فترة الري (دقائق)</label>
+                <input type="number" id="interval" name="interval" placeholder="أدخل فترة الري بالدقائق" required>
+            </div>
+            <button type="submit">حفظ الإعدادات</button>
+        </form>
+    </section>
+    
+
+    <section id="log-section" class="log-section">
+        <h2>السجل</h2>
+        <ul id="log-list">
+            <li>تم بدء الري في الساعة 10:00 صباحاً.</li>
+            <li>تم إيقاف الري في الساعة 10:30 صباحاً.</li>
+        </ul>
+        <button onclick="clearLog()">مسح السجل</button>
+    </section>
+    
+    <section id="water-tank-section" class="water-tank-section">
+        <h2>خزان المياه</h2>
+        <div class="water-tank">
+            <div class="water" id="water"></div>
+        </div>
+        <div class="water-level-controls">
+            <button onclick="increaseWaterLevel()">زيادة مستوى المياه</button>
+            <button onclick="decreaseWaterLevel()">تقليل مستوى المياه</button>
+        </div>
+    </section>
+    
+
+    <div class="alert" id="alert" style="display: none;">هذه رسالة تنبيه.</div>
+
+    <footer>
+        <p> نظام الري الذكي </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
