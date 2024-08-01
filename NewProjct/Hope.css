@@ -482,20 +482,6 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    background: linear-gradient(to right, #0f9b0f, #38ef7d);
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-footer p {
-    margin: 0;
-}
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
@@ -511,7 +497,7 @@ footer p {
 
 /* Water Tank Section Styling */
 .water-tank-section {
-    padding: 50px 20px;
+    padding: 100px 50px;
     text-align: center;
     background: linear-gradient(to right, #edf7f3, #f7f9f9);
     animation: fadeIn 1.5s ease-in-out;
@@ -519,7 +505,7 @@ footer p {
 
 .water-tank-section h2 {
     font-size: 2.5em;
-    color: #0f9b0f;
+    color: #10df1e;
     margin-bottom: 20px;
     animation: fadeInDown 1.5s ease-in-out;
 }
@@ -527,7 +513,7 @@ footer p {
 .water-tank {
     width: 200px;
     height: 400px;
-    border: 5px solid #0f9b0f;
+    border: 5px solid #33f45a;
     border-radius: 10px;
     position: relative;
     margin: 0 auto;
@@ -538,7 +524,7 @@ footer p {
 .water {
     width: 100%;
     height: 0;
-    background: linear-gradient(to top, #38ef7d, #0f9b0f);
+    background: linear-gradient(to top, #4b6ff1, #2f79ef);
     position: absolute;
     bottom: 0;
     transition: height 0.5s ease;
@@ -567,4 +553,152 @@ footer p {
     background: linear-gradient(to right, #0c7a0c, #32d9a2);
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f6f6f6;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    background-color: #3b5998; /* Facebook blue color */
+   
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.social-icon-media a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.social-icon-media:hover {
+    background-color: #2d4373; /* Darker Facebook blue color */
+}
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
 }
