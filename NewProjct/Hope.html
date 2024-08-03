@@ -11,119 +11,113 @@
 <body>
     <header>
         <nav>
-            <img class="logo"  src="Irrigation system.png"  alt="شعار الموقع">
-            <h1 style="   color: white;">نظام الري الذكي </h1>
+            <img class="logo" src="Irrigation system.png" alt="شعار الموقع" data-translate="شعار الموقع">
+            <h1 style="color: white;" data-translate="نظام الري الذكي">نظام الري الذكي</h1>
             <ul>
-                <li><a href="#contact-section">تواصل معنا</a></li>
-                <li><a href="#features-section">المميزات</a></li>
-                <li><a href="#settings-section">الإعدادات</a></li>
-                <li><a href="#log-section">السجل</a></li>
-                
-                <li><a href="#main-section">الرئيسية</a></li>
+                <li><a href="#contact-section" data-translate="تواصل معنا">تواصل معنا</a></li>
+                <li><a href="#features-section" data-translate="المميزات">المميزات</a></li>
+                <li><a href="#settings-section" data-translate="الإعدادات">الإعدادات</a></li>
+                <li><a href="#log-section" data-translate="السجل">السجل</a></li>
+                <li><a href="#main-section" data-translate="الرئيسية">الرئيسية</a></li>
             </ul>
             <div class="language-switcher">
-                <button onclick="changeLanguage('en')">English</button>
-                <button onclick="changeLanguage('ar')">العربية</button>
+                <button onclick="toggleLanguage()">Switch Language</button>
             </div>
         </nav>
     </header>
 
-    <section style="background-image: url(background.jpg) ;" id="main-section" class="main-section">
+    <section style="background-image: url(background.jpg);" id="main-section" class="main-section" data-translate="مرحباً بك في نظام الري الذكي">
         <div class="container">
-            <h1>مرحباً بك في نظام الري الذكي</h1>
-            <p style="color: #43a047;">نحن نقدم نظاماً ذكياً يساعدك على الري الأمثل لنباتاتك. يمكنك مراقبة نسبة الرطوبة والتحكم في نظام الري بسهولة.</p>
-            <div class="status">النظام قيد التشغيل</div>
+            <h1 data-translate="مرحباً بك في نظام الري الذكي">مرحباً بك في نظام الري الذكي</h1>
+            <p style="color: #43a047;" data-translate="نحن نقدم نظاماً ذكياً يساعدك على الري الأمثل لنباتاتك. يمكنك مراقبة نسبة الرطوبة والتحكم في نظام الري بسهولة.">نحن نقدم نظاماً ذكياً يساعدك على الري الأمثل لنباتاتك. يمكنك مراقبة نسبة الرطوبة والتحكم في نظام الري بسهولة.</p>
+            <div class="status" data-translate="النظام قيد التشغيل">النظام قيد التشغيل</div>
             <div class="moisture-container">
-                <div class="moisture-level">مستوى الرطوبة الحالي: <span id="moisture-level">0%</span></div>
+                <div class="moisture-level" data-translate="مستوى الرطوبة الحالي:"><span id="moisture-level">0%</span> مستوى الرطوبة الحالي:</div>
                 <div class="moisture-bar">
                     <div class="moisture-indicator" id="moisture-indicator"></div>
                 </div>
             </div>
             <div class="button-group">
-                <button onclick="startIrrigation()">بدء الري</button>
-                <button onclick="stopIrrigation()">إيقاف الري</button>
+                <button onclick="startIrrigation()" data-translate="بدء الري">بدء الري</button>
+                <button onclick="stopIrrigation()" data-translate="إيقاف الري">إيقاف الري</button>
             </div>
         </div>
     </section>
 
-    <section id="features-section" class="features-section">
-        <h2>مميزات نظامنا</h2>
+    <section id="features-section" class="features-section" data-translate="مميزات نظامنا">
+        <h2 data-translate="مميزات نظامنا">مميزات نظامنا</h2>
         <div class="feature">
-            <h3>مراقبة الرطوبة</h3>
-            <p>يمكنك مراقبة نسبة الرطوبة في التربة والحصول على تنبيهات عندما تكون بحاجة للري.</p>
+            <h3 data-translate="مراقبة الرطوبة">مراقبة الرطوبة</h3>
+            <p data-translate="يمكنك مراقبة نسبة الرطوبة في التربة والحصول على تنبيهات عندما تكون بحاجة للري.">يمكنك مراقبة نسبة الرطوبة في التربة والحصول على تنبيهات عندما تكون بحاجة للري.</p>
         </div>
         <div class="feature">
-            <h3>جدولة الري</h3>
-            <p>يمكنك تحديد جداول زمنية للري التلقائي حسب احتياجات نباتاتك.</p>
+            <h3 data-translate="جدولة الري">جدولة الري</h3>
+            <p data-translate="يمكنك تحديد جداول زمنية للري التلقائي حسب احتياجات نباتاتك.">يمكنك تحديد جداول زمنية للري التلقائي حسب احتياجات نباتاتك.</p>
         </div>
         <div class="feature">
-            <h3>توفير المياه</h3>
-            <p>يساعد النظام في توفير المياه عبر الري الأمثل وتجنب الهدر.</p>
+            <h3 data-translate="توفير المياه">توفير المياه</h3>
+            <p data-translate="يساعد النظام في توفير المياه عبر الري الأمثل وتجنب الهدر.">يساعد النظام في توفير المياه عبر الري الأمثل وتجنب الهدر.</p>
         </div>
     </section>
 
-    <section style="background-image: url(image2.jpg)" id="contact-section" class="contact-section">
-        <h2>تواصل معنا</h2>
+    <section style="background-image: url(image2.jpg)" id="contact-section" class="contact-section" data-translate="تواصل معنا">
+        <h2 data-translate="تواصل معنا">تواصل معنا</h2>
         <form action="https://example.com/submit_form" method="POST">
             <div class="form-group">
-                <label for="name">الاسم</label>
-                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+                <label for="name" data-translate="الاسم">الاسم</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required data-translate="أدخل اسمك">
             </div>
             <div class="form-group">
-                <label for="email">البريد الإلكتروني</label>
-                <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+                <label for="email" data-translate="البريد الإلكتروني">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required data-translate="أدخل بريدك الإلكتروني">
             </div>
             <div class="form-group">
-                <label for="message">رسالتك</label>
-                <textarea id="message" name="message" placeholder="أدخل رسالتك" rows="5" required></textarea>
+                <label for="message" data-translate="رسالتك">رسالتك</label>
+                <textarea id="message" name="message" placeholder="أدخل رسالتك" rows="5" required data-translate="أدخل رسالتك"></textarea>
             </div>
-            <button type="submit">إرسال</button>
+            <button type="submit" data-translate="إرسال">إرسال</button>
         </form>
     </section>
-    
-    
 
-    <section id="settings-section" class="settings-section">
-        <h2>الإعدادات</h2>
+    <section id="settings-section" class="settings-section" data-translate="الإعدادات">
+        <h2 data-translate="الإعدادات">الإعدادات</h2>
         <form>
             <div class="form-group">
-                <label for="interval">فترة الري (دقائق)</label>
-                <input type="number" id="interval" name="interval" placeholder="أدخل فترة الري بالدقائق" required>
+                <label for="interval" data-translate="فترة الري (دقائق)">فترة الري (دقائق)</label>
+                <input type="number" id="interval" name="interval" placeholder="أدخل فترة الري بالدقائق" required data-translate="أدخل فترة الري بالدقائق">
             </div>
-            <button type="submit">حفظ الإعدادات</button>
+            <button type="submit" data-translate="حفظ الإعدادات">حفظ الإعدادات</button>
         </form>
     </section>
-    
 
-    <section  id="log-section" class="log-section">
-        <h2>السجل</h2>
+    <section id="log-section" class="log-section" data-translate="السجل">
+        <h2 data-translate="السجل">السجل</h2>
         <ul id="log-list">
-            <li>تم بدء الري في الساعة 10:00 صباحاً.</li>
-            <li>تم إيقاف الري في الساعة 10:30 صباحاً.</li>
+            <li data-translate="تم بدء الري في الساعة 10:00 صباحاً.">تم بدء الري في الساعة 10:00 صباحاً.</li>
+            <li data-translate="تم إيقاف الري في الساعة 10:30 صباحاً.">تم إيقاف الري في الساعة 10:30 صباحاً.</li>
         </ul>
-        <button onclick="clearLog()">مسح السجل</button>
+        <button onclick="clearLog()" data-translate="مسح السجل">مسح السجل</button>
     </section>
-    
-    <section  class="water-tank-section">
-        <h2>خزان المياه</h2>
+
+    <section class="water-tank-section" data-translate="خزان المياه">
+        <h2 data-translate="خزان المياه">خزان المياه</h2>
         <div class="water-tank">
             <div class="water" id="water"></div>
         </div>
         <div class="water-level-controls">
-            <button onclick="increaseWaterLevel()">زيادة مستوى المياه</button>
-            <button onclick="decreaseWaterLevel()">تقليل مستوى المياه</button>
+            <button onclick="increaseWaterLevel()" data-translate="زيادة مستوى المياه">زيادة مستوى المياه</button>
+            <button onclick="decreaseWaterLevel()" data-translate="تقليل مستوى المياه">تقليل مستوى المياه</button>
         </div>
     </section>
-    
 
-    <div class="alert" id="alert" style="display: none;">هذه رسالة تنبيه.</div>
+    <div class="alert" id="alert" style="display: none;" data-translate="هذه رسالة تنبيه.">هذه رسالة تنبيه.</div>
 
-    <footer class="footer">
+    <footer class="footer" data-translate="جميع الحقوق محفوظة">
         <div class="wave" id="wave1"></div>
         <div class="wave" id="wave2"></div>
         <div class="wave" id="wave3"></div>
         <div class="wave" id="wave4"></div>
-        <ul  style="list-style: none;"  class="social-icon">
+        <ul style="list-style: none;" class="social-icon">
             <li class="social-icon-media"><a class="social-icon_link" href="#">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a></li>
@@ -136,16 +130,12 @@
             <li class="social-icon-media"><a class="social-icon_link" href="#">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a></li>
-          </ul>
-      
-        
-        <p data-translate="footer" >&copy;نظام الري الذكي | All Rights Reserved</p>
-      </footer>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-      <script src="js.js"></script>
-
+        </ul>
+        <p data-translate="&copy;نظام الري الذكي | All Rights Reserved">&copy;نظام الري الذكي | All Rights Reserved</p>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js.js"></script>
 </body>
-
 </html>

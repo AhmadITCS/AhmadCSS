@@ -70,95 +70,101 @@ function updateWaterLevel() {
 
 // Initialize the water level on page load
 window.onload = updateWaterLevel;
-    const translations = {
-        "en": {
-            "title": "Smart Irrigation System",
-            "welcome": "Welcome to the Smart Irrigation System",
-            "description": "We offer a smart system to help you optimize the irrigation of your plants. You can monitor the moisture level and control the irrigation system easily.",
-            "status": "System is running",
-            "current_moisture_level": "Current moisture level:",
-            "start_irrigation": "Start Irrigation",
-            "stop_irrigation": "Stop Irrigation",
-            "features": "Our System Features",
-            "feature1": "Moisture Monitoring",
-            "feature1_desc": "You can monitor soil moisture levels and get alerts when it's time to water.",
-            "feature2": "Scheduled Irrigation",
-            "feature2_desc": "You can set schedules for automatic watering based on your plants' needs.",
-            "feature3": "Water Saving",
-            "feature3_desc": "The system helps save water through optimal irrigation and avoiding wastage.",
-            "contact": "Contact Us",
-            "name": "Name",
-            "email": "Email",
-            "message": "Message",
-            "send": "Send",
-            "settings": "Settings",
-            "interval": "Irrigation Interval (minutes)",
-            "save_settings": "Save Settings",
-            "log": "Log",
-            "clear_log": "Clear Log",
-            "water_tank": "Water Tank",
-            "increase_water": "Increase Water Level",
-            "decrease_water": "Decrease Water Level",
-            "alert": "This is an alert message.",
-            "footer": "&copy; Smart Irrigation System | All Rights Reserved"
-        },
+const translations = {
+    en: {
+        'نظام الري الذكي': 'Smart Irrigation System',
+        'تواصل معنا': 'Contact Us',
+        'المميزات': 'Features',
+        'الإعدادات': 'Settings',
+        'السجل': 'Log',
+        'الرئيسية': 'Home',
+        'مرحباً بك في نظام الري الذكي': 'Welcome to the Smart Irrigation System',
+        'نحن نقدم نظاماً ذكياً يساعدك على الري الأمثل لنباتاتك. يمكنك مراقبة نسبة الرطوبة والتحكم في نظام الري بسهولة.': 'We offer a smart system that helps you optimize watering for your plants. You can monitor moisture levels and control the irrigation system easily.',
+        'النظام قيد التشغيل': 'System is running',
+        'مستوى الرطوبة الحالي:': 'Current moisture level:',
+        'بدء الري': 'Start Irrigation',
+        'إيقاف الري': 'Stop Irrigation',
+        'مميزات نظامنا': 'Our System Features',
+        'مراقبة الرطوبة': 'Moisture Monitoring',
+        'يمكنك مراقبة نسبة الرطوبة في التربة والحصول على تنبيهات عندما تكون بحاجة للري.': 'You can monitor soil moisture levels and get alerts when watering is needed.',
+        'جدولة الري': 'Irrigation Scheduling',
+        'يمكنك تحديد جداول زمنية للري التلقائي حسب احتياجات نباتاتك.': 'You can set up automatic irrigation schedules based on your plants\' needs.',
+        'توفير المياه': 'Water Saving',
+        'يساعد النظام في توفير المياه عبر الري الأمثل وتجنب الهدر.': 'The system helps save water through optimal irrigation and avoiding waste.',
+        'تواصل معنا': 'Contact Us',
+        'الاسم': 'Name',
+        'أدخل اسمك': 'Enter your name',
+        'البريد الإلكتروني': 'Email',
+        'أدخل بريدك الإلكتروني': 'Enter your email',
+        'رسالتك': 'Your Message',
+        'أدخل رسالتك': 'Enter your message',
+        'إرسال': 'Send',
+        'الإعدادات': 'Settings',
+        'فترة الري (دقائق)': 'Irrigation Interval (Minutes)',
+        'أدخل فترة الري بالدقائق': 'Enter the irrigation interval in minutes',
+        'حفظ الإعدادات': 'Save Settings',
+        'السجل': 'Log',
+        'تم بدء الري في الساعة 10:00 صباحاً.': 'Irrigation started at 10:00 AM.',
+        'تم إيقاف الري في الساعة 10:30 صباحاً.': 'Irrigation stopped at 10:30 AM.',
+        'مسح السجل': 'Clear Log',
+        'خزان المياه': 'Water Tank',
+        'زيادة مستوى المياه': 'Increase Water Level',
+        'تقليل مستوى المياه': 'Decrease Water Level',
+        'هذه رسالة تنبيه.': 'This is an alert message.',
+        '&copy;نظام الري الذكي | All Rights Reserved': '&copy;Smart Irrigation System | All Rights Reserved'
+    },
+    ar: {
+        'Smart Irrigation System': 'نظام الري الذكي',
+        'Contact Us': 'تواصل معنا',
+        'Features': 'المميزات',
+        'Settings': 'الإعدادات',
+        'Log': 'السجل',
+        'Home': 'الرئيسية',
+        'Welcome to the Smart Irrigation System': 'مرحباً بك في نظام الري الذكي',
+        'We offer a smart system that helps you optimize watering for your plants. You can monitor moisture levels and control the irrigation system easily.': 'نحن نقدم نظاماً ذكياً يساعدك على الري الأمثل لنباتاتك. يمكنك مراقبة نسبة الرطوبة والتحكم في نظام الري بسهولة.',
+        'System is running': 'النظام قيد التشغيل',
+        'Current moisture level:': 'مستوى الرطوبة الحالي:',
+        'Start Irrigation': 'بدء الري',
+        'Stop Irrigation': 'إيقاف الري',
+        'Our System Features': 'مميزات نظامنا',
+        'Moisture Monitoring': 'مراقبة الرطوبة',
+        'You can monitor soil moisture levels and get alerts when watering is needed.': 'يمكنك مراقبة نسبة الرطوبة في التربة والحصول على تنبيهات عندما تكون بحاجة للري.',
+        'Irrigation Scheduling': 'جدولة الري',
+        'You can set up automatic irrigation schedules based on your plants\' needs.': 'يمكنك تحديد جداول زمنية للري التلقائي حسب احتياجات نباتاتك.',
+        'Water Saving': 'توفير المياه',
+        'The system helps save water through optimal irrigation and avoiding waste.': 'يساعد النظام في توفير المياه عبر الري الأمثل وتجنب الهدر.',
+        'Name': 'الاسم',
+        'Enter your name': 'أدخل اسمك',
+        'Email': 'البريد الإلكتروني',
+        'Enter your email': 'أدخل بريدك الإلكتروني',
+        'Your Message': 'رسالتك',
+        'Enter your message': 'أدخل رسالتك',
+        'Send': 'إرسال',
+        'Irrigation Interval (Minutes)': 'فترة الري (دقائق)',
+        'Enter the irrigation interval in minutes': 'أدخل فترة الري بالدقائق',
+        'Save Settings': 'حفظ الإعدادات',
+        'Irrigation started at 10:00 AM.': 'تم بدء الري في الساعة 10:00 صباحاً.',
+        'Irrigation stopped at 10:30 AM.': 'تم إيقاف الري في الساعة 10:30 صباحاً.',
+        'Clear Log': 'مسح السجل',
+        'Water Tank': 'خزان المياه',
+        'Increase Water Level': 'زيادة مستوى المياه',
+        'Decrease Water Level': 'تقليل مستوى المياه',
+        'This is an alert message.': 'هذه رسالة تنبيه.',
+        '&copy;Smart Irrigation System | All Rights Reserved': '&copy;نظام الري الذكي | All Rights Reserved'
+    }
+};
 
-        "ar": {
-            "title": "نظام الري الذكي",
-            "welcome": "مرحباً بك في نظام الري الذكي",
-            "description": "نحن نقدم نظاماً ذكياً يساعدك على الري الأمثل لنباتاتك. يمكنك مراقبة نسبة الرطوبة والتحكم في نظام الري بسهولة.",
-            "status": "النظام قيد التشغيل",
-            "current_moisture_level": "مستوى الرطوبة الحالي:",
-            "start_irrigation": "بدء الري",
-            "stop_irrigation": "إيقاف الري",
-            "features": "مميزات نظامنا",
-            "feature1": "مراقبة الرطوبة",
-            "feature1_desc": "يمكنك مراقبة نسبة الرطوبة في التربة والحصول على تنبيهات عندما تكون بحاجة للري.",
-            "feature2": "جدولة الري",
-            "feature2_desc": "يمكنك تحديد جداول زمنية للري التلقائي حسب احتياجات نباتاتك.",
-            "feature3": "توفير المياه",
-            "feature3_desc": "يساعد النظام في توفير المياه عبر الري الأمثل وتجنب الهدر.",
-            "contact": "تواصل معنا",
-            "name": "الاسم",
-            "email": "البريد الإلكتروني",
-            "message": "رسالتك",
-            "send": "إرسال",
-            "settings": "الإعدادات",
-            "interval": "فترة الري (دقائق)",
-            "save_settings": "حفظ الإعدادات",
-            "log": "السجل",
-            "clear_log": "مسح السجل",
-            "water_tank": "خزان المياه",
-            "increase_water": "زيادة مستوى المياه",
-            "decrease_water": "تقليل مستوى المياه",
-            "alert": "هذه رسالة تنبيه.",
-            "footer": "&copy;نظام الري الذكي | All Rights Reserved"
+let currentLanguage = 'ar';
+
+function toggleLanguage() {
+    const newLanguage = currentLanguage === 'ar' ? 'en' : 'ar';
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.innerHTML.trim();
+        if (translations[newLanguage][key]) {
+            element.innerHTML = translations[newLanguage][key];
+        } else if (translations[currentLanguage][key]) {
+            element.innerHTML = translations[newLanguage][translations[currentLanguage][key]];
         }
-    };
-    
-    function loadTranslations(callback) {
-        fetch('translations.json')
-            .then(response => response.json())
-            .then(data => {
-                callback(data);
-            })
-            .catch(error => console.error('Error loading translations:', error));
-    }
-    
-    function applyTranslations(language, translations) {
-        document.querySelectorAll("[data-translate]").forEach(element => {
-            const key = element.getAttribute("data-translate");
-            element.innerHTML = translations[language][key] || element.innerHTML;
-        });
-    }
-    
-    function changeLanguage(language) {
-        loadTranslations(translations => {
-            applyTranslations(language, translations);
-        });
-    }
-    
-    document.addEventListener('DOMContentLoaded', () => {
-        // Set default language to Arabic
-        changeLanguage('ar');
     });
+    currentLanguage = newLanguage;
+}
